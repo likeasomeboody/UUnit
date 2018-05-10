@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace UUnit
+namespace UnityUnit
 {
     /// <summary>
     /// Base class for a test runner

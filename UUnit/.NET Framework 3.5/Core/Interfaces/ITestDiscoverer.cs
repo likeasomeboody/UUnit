@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace UUnit
+namespace UnityUnit
 {
     /// <summary>
     /// An interface for an object that can discover test fixtures

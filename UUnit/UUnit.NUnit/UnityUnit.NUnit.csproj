@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70E158CF-4D99-4B5D-8679-55F1405BFCCE}</ProjectGuid>
+    <ProjectGuid>{FF602118-08B4-4024-989C-137C7CCEF9F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UUnit</RootNamespace>
-    <AssemblyName>UUnit</AssemblyName>
+    <RootNamespace>UUnit.NUnit</RootNamespace>
+    <AssemblyName>UUnit.NUnit</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -44,14 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\BaseTestRunner.cs" />
-    <Compile Include="Core\ITest.cs" />
-    <Compile Include="Core\ITestDiscoverer.cs" />
-    <Compile Include="Core\ITestFixture.cs" />
-    <Compile Include="Core\ITestProcessor.cs" />
-    <Compile Include="Core\ITestResult.cs" />
-    <Compile Include="Core\TestOutcome.cs" />
+    <Compile Include="NUnitTest.cs" />
+    <Compile Include="NUnitTestFixture.cs" />
+    <Compile Include="NUnitTestRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\.NET Framework 3.5\UnityUnit.csproj">
+      <Project>{70e158cf-4d99-4b5d-8679-55f1405bfcce}</Project>
+      <Name>UnityUnit</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -63,8 +65,4 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
   </Target>
-  <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*.dll" "$(SolutionDir)..\Assets\UUnit\Plugins\Framework 3.5\"
-xcopy "$(TargetDir)*.pdb" "$(SolutionDir)..\Assets\UUnit\Plugins\Framework 3.5\"</PostBuildEvent>
-  </PropertyGroup>
 </Project>

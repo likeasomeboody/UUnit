@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-namespace UUnit
+namespace UnityUnit
 {
     public interface ITestResult
     {
@@ -12,6 +12,11 @@ namespace UUnit
         /// <summary>
         /// The failure message
         /// </summary>
-        string Message { get; }
+        string BecauseMessage { get; }
+
+        /// <summary>
+        /// The failure message
+        /// </summary>
+        string FailMessage { get; }
     }
 }
