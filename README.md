@@ -1,18 +1,46 @@
-# UUnit
+# UnityUnit
+
 A testing framework designed for Unity C# with additional features.
 
-The motivation for creating this is the lack of available functionality with Unity's regular testing tools that is readily available in most other testing frameworks. Though Unity testing is good for most situations, this project aims to make it complete.  
+## Motivation
 
-## Planned Features:
--	Standard Unit Tests
--	Coroutine Tests
--	Unity batch mode running
--	Code coverage assessment
--	Code coverage UI 
--	Cobertura code coverage report generation 
--	Editor and batch mode NUnit and JUnitreport generation 
--	Non-Unity coroutine test execution (Unity engine Mocking)
--	Scene test components
--	Scriptable Scene tests
--	Fluent Assertions 
--	Moq
+As a general rule testing makes software better structured, more maintanable, more shareable and more reliable. It makes refactors and reworks of critical code less risky.
+
+Unity's stock NUnit test tools are very helpful for defining and running tests from within unity. Playmode tests are exceptional for running tests on components that are meant to exhibit behaviour but far from complete
+
+## Objectives
+
+Unity Unit is intended to be an open source Test runner with a focus on Unity C# development. It aims to:
+ * Add many of the unit testing features available to current testing frameworks that are sorely lacking in Unity
+ * Provide a runner for unity tests that does not explicitly require the Unity Editor
+ * Last but not least it is to be easily modified to add more functionality and additional behaviour.  
+
+## Planned Releases:
+
+### UnityTest 0.1:
+ *	Unity Test Runner editor
+ *  Minimum viable support for standard NUnit Tests 
+ *	Minimum viable support for UnityTests
+ *	Unity batch mode commands
+ *  Command line test runner that works with NUnit Tests
+
+### UnityTest 0.2:
+ * NUnit Test report generation module
+ * JUnit Test report generation module
+
+### UnityTest 0.3:
+ * Scene test components for running tests dependent on a particular scene
+ * Scene test runner editor 
+ 
+### UnityTest 0.4:
+ * Fluent Assertions integration
+ 
+### UnityTest 0.5:
+ * External unity test runner, permitting Unity Play Mode Tests to be run outside of the editor
+ 
+### UnityTest 0.6:
+ *	Code coverage evaluation and UI reporting in unity editor test runner and external test runner
+ 
+### UnityTest 0.7:
+ *	Cobertura code coverage report generation
+ *  OpenCover code coverage report generation with ReportGenerator
