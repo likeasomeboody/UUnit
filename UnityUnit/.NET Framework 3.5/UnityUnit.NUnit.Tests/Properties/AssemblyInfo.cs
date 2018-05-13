@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UnityUnit_NET4.6")]
+[assembly: AssemblyTitle("UnityUnit.NUnit.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UnityUnit_NET4.6")]
+[assembly: AssemblyProduct("UnityUnit.NUnit.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d21b4b25-1e69-42d8-aa9e-a3db02e6b2aa")]
+[assembly: Guid("17d5d6a9-cd7a-4c96-a2b7-f943ff3c6656")]
 
 // Version information for an assembly consists of the following four values:
 //

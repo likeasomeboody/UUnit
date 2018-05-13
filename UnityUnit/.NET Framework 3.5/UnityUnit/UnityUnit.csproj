@@ -7,8 +7,8 @@
     <ProjectGuid>{70E158CF-4D99-4B5D-8679-55F1405BFCCE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UUnit</RootNamespace>
-    <AssemblyName>UUnit</AssemblyName>
+    <RootNamespace>UnityUnit</RootNamespace>
+    <AssemblyName>UnityUnit</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -43,22 +43,19 @@
     <Compile Include="Core\Assert.cs" />
     <Compile Include="Core\AssertionException.cs" />
     <Compile Include="Core\BaseTestRunner.cs" />
+    <Compile Include="Core\Implementations\TestResult.cs" />
     <Compile Include="Core\Interfaces\ITest.cs" />
     <Compile Include="Core\Interfaces\ITestDiscoverer.cs" />
     <Compile Include="Core\Interfaces\ITestFixture.cs" />
     <Compile Include="Core\Interfaces\ITestProcessor.cs" />
     <Compile Include="Core\Interfaces\ITestResult.cs" />
-    <Compile Include="Core\Implementations\TestResult.cs" />
     <Compile Include="Core\TestOutcome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Core\Attributes\" />
-    <Folder Include="NUnit\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)*.dll" "$(SolutionDir)..\Assets\UUnit\Plugins\Framework 3.5\"
-xcopy "$(TargetDir)*.pdb" "$(SolutionDir)..\Assets\UUnit\Plugins\Framework 3.5\"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
