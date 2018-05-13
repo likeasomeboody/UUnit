@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="NUnitTest.cs" />
     <Compile Include="NUnitTestFixture.cs" />
-    <Compile Include="NUnitTestRunner.cs" />
+    <Compile Include="NUnitAssemblyTestDiscoverer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

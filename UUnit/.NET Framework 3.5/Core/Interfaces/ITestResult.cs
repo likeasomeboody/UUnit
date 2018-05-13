@@ -5,18 +5,28 @@ namespace UnityUnit
     public interface ITestResult
     {
         /// <summary>
+        /// The name of this test
+        /// </summary>
+        string Name { get; }
+
+        /// <summary>
+        /// A description of this test
+        /// </summary>
+        string Description { get; }
+
+        /// <summary>
         /// The outcome of this test
         /// </summary>
         TestOutcome Outcome { get; }
 
         /// <summary>
-        /// The failure message
+        /// Why this test is run
         /// </summary>
-        string BecauseMessage { get; }
+        string Because { get; }
 
         /// <summary>
-        /// The failure message
+        /// Message generated from running the test
         /// </summary>
-        string FailMessage { get; }
+        string Message { get; }
     }
 }

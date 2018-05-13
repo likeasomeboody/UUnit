@@ -9,13 +9,8 @@ namespace UnityUnit
     public interface ITestDiscoverer
     {
         /// <summary>
-        /// Fixtures that have been discovered
+        /// Return test fixtures to be run
         /// </summary>
-        List<ITestFixture> Fixtures { get; }
-
-        /// <summary>
-        /// Discover test fixtures
-        /// </summary>
-        void Discover();
+        List<ITestFixture> Discover();
     }
 }

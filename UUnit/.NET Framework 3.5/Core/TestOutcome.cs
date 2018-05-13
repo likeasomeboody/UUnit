@@ -7,6 +7,7 @@ namespace UnityUnit
     {
         NotRun,
         Skipped,
+        Error,
         Failed,
         Passed
     }

@@ -22,6 +22,6 @@ namespace UnityUnit
         /// Runs this test
         /// </summary>
         /// <returns></returns>
-        ITestResult Run();
+        ITestResult Run(object container);
     }
 }
