@@ -22,25 +22,21 @@ Unity Unit is intended to be an open source Test runner with a focus on Unity C#
  *  Minimum viable support for standard NUnit Tests 
  *	Minimum viable support for UnityTests
  *	Unity batch mode commands
- *  Command line test runner that works with NUnit Tests
+ * Command line test runner that works with NUnit Tests
 
 ### UnityTest 0.2:
+ *	Code coverage evaluation and UI reporting in 
+
+### UnityTest 0.3:
  * NUnit Test report generation module
  * JUnit Test report generation module
 
-### UnityTest 0.3:
+### UnityTest 0.4:
+ *	Cobertura code coverage report generation
+ * OpenCover code coverage report generation with ReportGenerator
+
+### UnityTest 0.5:
  * Scene test components for running tests dependent on a particular scene
  * Scene test runner editor 
  
-### UnityTest 0.4:
- * Fluent Assertions integration
- 
-### UnityTest 0.5:
- * External unity test runner, permitting Unity Play Mode Tests to be run outside of the editor
- 
-### UnityTest 0.6:
- *	Code coverage evaluation and UI reporting in unity editor test runner and external test runner
- 
-### UnityTest 0.7:
- *	Cobertura code coverage report generation
- *  OpenCover code coverage report generation with ReportGenerator
+
